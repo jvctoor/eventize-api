@@ -2,7 +2,7 @@ import { PrismaClient, Prisma } from '@prisma/client'
 import { User } from '../models/UserModel'
 import internal from 'stream';
 const prisma = new PrismaClient()
-import * as bcrypt from 'bcrypt';
+import * as bcrypt from 'bcryptjs';
 import * as jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 

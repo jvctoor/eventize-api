@@ -37,7 +37,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.signup = exports.login = void 0;
 const UserDAO_1 = __importDefault(require("../daos/UserDAO"));
-const bcrypt = __importStar(require("bcrypt"));
+const bcrypt = __importStar(require("bcryptjs"));
 const jwt = __importStar(require("jsonwebtoken"));
 const usuarioDAO = new UserDAO_1.default();
 /**
