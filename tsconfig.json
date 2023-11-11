@@ -10,6 +10,7 @@
     "include": [
         "src/**/*.ts",
         "src/**/*.d.ts",
-        ".env.d.ts" 
-      ]
+        ".env.d.ts", 
+        "express.d.ts"      
+    ]
 }
