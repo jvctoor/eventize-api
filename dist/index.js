@@ -30,12 +30,14 @@ const dotenv = __importStar(require("dotenv"));
 const server_1 = __importDefault(require("./server"));
 const UserRoutes_1 = __importDefault(require("./routes/UserRoutes"));
 const EventRoutes_1 = __importDefault(require("./routes/EventRoutes"));
+const TicketRoutes_1 = __importDefault(require("./routes/TicketRoutes"));
 const swagger_1 = require("./services/swagger");
 const body_parser_1 = __importDefault(require("body-parser"));
 dotenv.config();
 server_1.default.use(body_parser_1.default.json());
 server_1.default.use('/api', UserRoutes_1.default);
 server_1.default.use('/api', EventRoutes_1.default);
+server_1.default.use('/api', TicketRoutes_1.default);
 server_1.default.use('/api-docs', swagger_1.swaggerUi.serve, swagger_1.swaggerUi.setup(swagger_1.specs));
 server_1.default.get('/', (req, res) => {
     res.send("Hello Eventize");
