@@ -18,14 +18,14 @@ export const getAllEventos = async (req: Request, res: Response) => {
 
 /**
  * @swagger
- * /events/{idPedido}:
+ * /events/{idEvento}:
  *   post:
  *     tags:
  *       - Eventos
- *     description: Get pedido by Id
+ *     description: Get evento by Id
  *     parameters:
  *       - in: path
- *         name: idPedido
+ *         name: idEvento
  *         required: true
  *         description: Id do pedido.
  *     responses:

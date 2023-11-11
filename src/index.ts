@@ -10,9 +10,9 @@ dotenv.config();
 
 app.use(bodyParser.json())
 
-app.use('/api', userRouter)
-app.use('/api', eventRouter)
-app.use('/api', ticketRouter)
+app.use('/', userRouter)
+app.use('/', eventRouter)
+app.use('/', ticketRouter)
 
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));

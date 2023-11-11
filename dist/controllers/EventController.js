@@ -28,14 +28,14 @@ const getAllEventos = (req, res) => __awaiter(void 0, void 0, void 0, function* 
 exports.getAllEventos = getAllEventos;
 /**
  * @swagger
- * /events/{idPedido}:
+ * /events/{idEvento}:
  *   post:
  *     tags:
  *       - Eventos
- *     description: Get pedido by Id
+ *     description: Get evento by Id
  *     parameters:
  *       - in: path
- *         name: idPedido
+ *         name: idEvento
  *         required: true
  *         description: Id do pedido.
  *     responses:
