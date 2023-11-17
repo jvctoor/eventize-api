@@ -2,15 +2,15 @@
 
 import { Router } from 'express';
 import {
-  getAllTickets,
+  createTicket,
   validateTicket
 } from '../controllers/TicketController';
 
 const ticketRouter = Router();
 
 
-ticketRouter.get('/tickets', getAllTickets);
+ticketRouter.post('/tickets', createTicket);
 
-ticketRouter.get('/tickets/validar/:idUsuario/:idEvento', validateTicket);
+ticketRouter.get('/tickets/validar/:idTicket', validateTicket);
 
 export default ticketRouter;

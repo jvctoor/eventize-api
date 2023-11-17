@@ -22,16 +22,31 @@ model Event {
   id Int @id @default(autoincrement())
   title String
   subtitle String
+  image_url String?
   price Float
   info String
   description String
   tickets Ticket[]
+  categorias Categoria[]
 }
 
 model Ticket {
   id Int @id @default(autoincrement())
   isValid Boolean @default(true)
+  date DateTime
+  title String
+  description String
+  image_url String?
   quantity Int
   event Event @relation(fields: [eventId], references: [id])
   eventId Int
 }
+
+model Categoria {
+  id Int @id @default(autoincrement())
+  name String
+  image_url String?
+  event Event @relation(fields: [eventId], references: [id])
+  eventId Int
+}
+
