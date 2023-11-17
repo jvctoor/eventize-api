@@ -9,7 +9,7 @@ Certifique-se de ter o Node.js instalado em sua máquina antes de prosseguir.
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/seu-nome-de-usuario/eventize-api.git
+git clone https://github.com/jvctoor/eventize-api.git
 cd eventize-api
 ````
 
