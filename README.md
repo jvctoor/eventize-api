@@ -1,6 +1,6 @@
 # Eventize API
 
-Eventize API é uma aplicação TypeScript construída utilizando o framework Express para fornecer serviços de gerenciamento de eventos.
+API do Eventize App - Graduação FIAP: Startup One. App de busca de eventos e venda de ingressos.
 
 ## Índice
 
