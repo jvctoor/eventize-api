@@ -2,6 +2,14 @@
 
 Eventize API é uma aplicação TypeScript construída utilizando o framework Express para fornecer serviços de gerenciamento de eventos.
 
+## Índice
+
+- [Controllers](https://github.com/jvctoor/eventize-api/tree/main/src/controllers): Todos os controllers do app.
+- [Data Access Objects](https://github.com/jvctoor/eventize-api/tree/main/src/daos): Todos os DAOs do app.
+- [Models](https://github.com/jvctoor/eventize-api/tree/main/src/models): Todos os models do app.
+- [Routes](https://github.com/jvctoor/eventize-api/tree/main/src/routes): Todas as rotas do app.
+- [Services](https://github.com/jvctoor/eventize-api/tree/main/src/services): Todas os serviços do app.
+
 ## Configuração
 
 Certifique-se de ter o Node.js instalado em sua máquina antes de prosseguir.
