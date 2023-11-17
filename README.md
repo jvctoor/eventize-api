@@ -1,3 +1,5 @@
+![Logo FIAP + Eventize](./cover.png)
+
 # Eventize API
 
 API do Eventize App - Graduação FIAP: Startup One. App de busca de eventos e venda de ingressos.
