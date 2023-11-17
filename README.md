@@ -1,63 +1,59 @@
 # Eventize API
 
-Eventize API is a TypeScript application built using the Express framework to provide event management services.
+Eventize API é uma aplicação TypeScript construída utilizando o framework Express para fornecer serviços de gerenciamento de eventos.
 
-## Configuration
+## Configuração
 
-Make sure you have Node.js installed on your machine before proceeding.
+Certifique-se de ter o Node.js instalado em sua máquina antes de prosseguir.
 
-1. Clone this repository:
+1. Clone este repositório:
 
 ```bash
-git clone https://github.com/your-username/eventize-api.git
+git clone https://github.com/seu-nome-de-usuario/eventize-api.git
 cd eventize-api
 ````
 
-2. Install dependencies:
+2. Instale as dependências:
 
 ```bash
 npm install
 ````
 
 
-3. Create a .env file at the root of the project and define the necessary environment variables:
+3. Crie um arquivo .env na raiz do projeto e defina as variáveis de ambiente necessárias:
 ```plaintext
-# Example MySQL connection string
-DATABASE_URL=mysql://your-username:password@localhost:3306/database-name
+# Exemplo de conexão com o MySQL
+DATABASE_URL=mysql://seu-usuario:senha@localhost:3306/nome-do-banco
 
-# Secret key for authentication
-SECRET_KEY=YourSecretKeyHere
+# Chave secreta para autenticação
+CHAVE_SECRETA=SuaChaveParaOJWT
 ````
 
-4. Database
+4. Banco de Dados
 
-This project uses Prisma to manage the database. Make sure you have set up the .env file correctly with the DATABASE_URL variable.
+Este projeto utiliza Prisma para gerenciar o banco de dados. Certifique-se de ter configurado corretamente o arquivo .env com a variável DATABASE_URL.
 
-Run Prisma migrations to create the database schema:
+Execute as migrações do Prisma para criar o esquema do banco de dados:
 ```bash
-npx prisma migrate deploy
+npx prisma migrate dev --name init
 ````
 
-5. Running the Application
+5. Executando a Aplicação
 
-After setting up the .env file and creating the database, you can start the application:
+Após configurar o arquivo .env e criar o banco de dados, você pode iniciar a aplicação:
 
 ```bash
 npm start
 ````
 
-The API will be available at http://localhost:3000.
+A API estará disponível em http://localhost:3000.
 
-6. Contributing
+6. Contribuindo
 
-Feel free to contribute with improvements, bug fixes, or new features. Just follow these steps:
+Sinta-se à vontade para contribuir com melhorias, correções de bugs ou novos recursos. Basta seguir estes passos:
 
-Fork this repository.
-Create a new branch (git checkout -b feature/new-feature).
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature/new-feature).
-Open a Pull Request.
-
-7. License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+- Faça um fork deste repositório.
+- Crie uma nova branch (git checkout -b feature/nova-feature).
+- Faça commit das suas alterações (git commit -am 'Adicionar nova feature').
+- Faça push para a branch (git push origin feature/nova-feature).
+- Abra um Pull Request.
