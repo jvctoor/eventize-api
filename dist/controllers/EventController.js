@@ -65,7 +65,7 @@ exports.getAllEventos = getAllEventos;
 /**
  * @swagger
  * /events/{idEvento}:
- *   post:
+ *   get:
  *     tags:
  *       - Eventos
  *     description: Get evento by Id

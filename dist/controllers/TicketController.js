@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.validateTicket = exports.createTicket = void 0;
+exports.getAllTickets = exports.validateTicket = exports.createTicket = void 0;
 const TicketDAO_1 = __importDefault(require("../daos/TicketDAO"));
 /**
  * @swagger
@@ -149,3 +149,26 @@ const validateTicket = (req, res) => __awaiter(void 0, void 0, void 0, function*
     }
 });
 exports.validateTicket = validateTicket;
+/**
+ * @swagger
+ * /tickets:
+ *   get:
+ *     tags:
+ *       - Tickets
+ *     description: Get todos os tickets
+ *     responses:
+ *       200:
+ *         description: Sucesso
+ */
+const getAllTickets = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const ticketDAO = new TicketDAO_1.default();
+        const ticketsEvento = yield ticketDAO.getAllTickets();
+        res.send(ticketsEvento);
+    }
+    catch (error) {
+        console.error('Erro ao buscar tickets:', error);
+        res.status(500).json({ message: 'Erro ao buscar tickets' });
+    }
+});
+exports.getAllTickets = getAllTickets;

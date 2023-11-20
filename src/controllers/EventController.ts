@@ -55,7 +55,7 @@ export const getAllEventos = async (req: Request, res: Response) => {
 /**
  * @swagger
  * /events/{idEvento}:
- *   post:
+ *   get:
  *     tags:
  *       - Eventos
  *     description: Get evento by Id

@@ -19,6 +19,10 @@ class TicketDAO {
         })
     }
 
+    async getAllTickets() {
+        return prisma.ticket.findMany()
+    }
+
     async validateTicket(id: number) {
         return prisma.ticket.update({
             where: {

@@ -148,6 +148,29 @@ export const validateTicket = async (req: Request, res: Response) => {
     }
 }
 
+/**
+ * @swagger
+ * /tickets:
+ *   get:
+ *     tags:
+ *       - Tickets
+ *     description: Get todos os tickets
+ *     responses:
+ *       200:
+ *         description: Sucesso
+ */
+export const getAllTickets = async (req: Request, res: Response) => {
+  try {
+      const ticketDAO = new TicketDAO();
+      const ticketsEvento = await ticketDAO.getAllTickets();
+
+      res.send(ticketsEvento)
+  } catch (error) {
+      console.error('Erro ao buscar tickets:', error);
+      res.status(500).json({ message: 'Erro ao buscar tickets' });
+  }
+}
+
 
 
 

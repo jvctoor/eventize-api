@@ -27,6 +27,11 @@ class TicketDAO {
             });
         });
     }
+    getAllTickets() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return prisma.ticket.findMany();
+        });
+    }
     validateTicket(id) {
         return __awaiter(this, void 0, void 0, function* () {
             return prisma.ticket.update({

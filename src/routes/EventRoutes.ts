@@ -11,6 +11,7 @@ const eventRouter = Router();
 
 eventRouter.get('/events', getAllEventos);
 
-eventRouter.post('/events/:id', getEventoById);
+
+eventRouter.get('/events/:id', getEventoById);
 
 export default eventRouter;
